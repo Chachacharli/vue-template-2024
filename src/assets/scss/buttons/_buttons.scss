@@ -1,0 +1,14 @@
+$primary-button-color: white;
+
+@import '../variant';
+@import '../../../../node_modules/bootstrap/scss/bootstrap';
+
+.btn.btn-primary {
+  color: white;
+  &:hover {
+    color: white;
+    text-decoration: if($link-hover-decoration == underline, none, null);
+    background-color: $primary;
+    border-color: var(--#{$prefix}btn-hover-border-color);
+  }
+}

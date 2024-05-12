@@ -1,0 +1,30 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+$green: #37996b;
+$primary: $green;
+$gray-900: #212529;
+$gray-800: #454545;
+$gray-700: #4f4f4f;
+$gray-600: #5d5d5d;
+$gray-500: #6d6d6d;
+$gray-400: #888888;
+$gray-300: #b0b0b0;
+$gray-200: #d1d1d1;
+$gray-100: #e7e7e7;
+$white: #f6f6f6;
+$breadcrumb-bg: $white;
+$breadcrumb-divider: quote('>');
+$red: #994437;
+$custom-select-disabled-bg: $input-bg;
+$custom-select-disabled-color: $white;
+$secondary: $gray-900;
+
+$theme-colors: (
+  'primary': $primary
+);
+
+// Include any default variable overrides here (though functions won't be available)
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../../node_modules/bootstrap/scss/_variables.scss';
