@@ -1,6 +1,6 @@
 <template>
   <section class="sidenav bg-primary rounded" :class="toggleSidenav" name="sidenav">
-    <button v-if="!isToggle" @click="togglebutton">Toogle</button>
+    <button @click="togglebutton">Toogle</button>
   </section>
 </template>
 

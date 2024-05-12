@@ -4,7 +4,12 @@
     <section style="flex-grow: 1" class="main-content w-100 mt-2" :class="toggleSidenav">
       <!-- superior-nav -->
       <nav class="bg-secondary d-flex justify-content-between superior-navbar mx-2 p-2 rounded">
-        <div class="flex"></div>
+        <!-- bread-crumb -->
+        <div class="flex flex-column">
+          <BreadCrumb />
+          <div name="currency-page"><h5>Home</h5></div>
+        </div>
+        <!-- user-info -->
         <div class="flex">
           <button @click="togglebutton">Toogle</button>
         </div>
@@ -18,6 +23,7 @@
 
 <script setup lang="ts">
 import SideNav from '@/components/sidenav/SideNav.vue'
+import BreadCrumb from '@/components/breadcrumb/BreadCrumb.vue'
 
 import { useAppStore } from '@/stores/app'
 import { ref, computed } from 'vue'

@@ -1,0 +1,15 @@
+{
+  "closeSession": "Close Session",
+  "dashboard": "Dashboard",
+  "errorMessages": {
+    "error": "Error"
+  },
+  "institution": "Institucion",
+  "login": "Login",
+  "menuWidget": "Widget Menu",
+  "record": "Record",
+  "successMessanges": {
+    "success": "Success"
+  },
+  "user": "User"
+}

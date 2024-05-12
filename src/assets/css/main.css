@@ -42,6 +42,10 @@
   }
 }
 
+.breadcrumb {
+  margin-bottom: 0;
+}
+
 @keyframes slideIn {
   0% {
     width: 0;

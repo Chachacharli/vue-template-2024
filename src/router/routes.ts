@@ -7,8 +7,23 @@ export const ROUTES = [
     component: HomeView
   },
   {
-    path: '/user',
-    name: 'user',
-    component: import('../views/User.vue')
+    path: '/login',
+    name: 'login',
+    component: HomeView
+  },
+  {
+    path: '/users',
+    name: 'users',
+    component: HomeView,
+    meta: {
+      breadcrumb: 'usuarios'
+    },
+    children: [
+      {
+        path: ':id',
+        name: 'user',
+        component: HomeView
+      }
+    ]
   }
 ] as const
