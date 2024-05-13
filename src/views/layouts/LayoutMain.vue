@@ -10,8 +10,14 @@
           <div name="currency-page"><h5>Home</h5></div>
         </div>
         <!-- user-info -->
-        <div class="flex">
-          <button @click="togglebutton">Toogle</button>
+        <div class="d-flex">
+          <button class="btn btn-primary mx-1" @click="togglebutton">Toogle</button>
+          <button class="btn btn-primary mx-1" @click="toggleTheme">
+            <span>
+              <i :class="theme === 'dark' ? 'bi bi-moon-fill' : 'bi bi-brightness-high'"></i>
+              {{ theme }}
+            </span>
+          </button>
         </div>
       </nav>
       <section class="p-2">
@@ -27,6 +33,10 @@ import BreadCrumb from '@/components/breadcrumb/BreadCrumb.vue'
 
 import { useAppStore } from '@/stores/app'
 import { ref, computed } from 'vue'
+
+import useTheme from '@/hooks/useTheme'
+
+const { theme, toggleTheme } = useTheme()
 const store = useAppStore()
 
 const isToggle = ref<boolean>(store.isToggle)

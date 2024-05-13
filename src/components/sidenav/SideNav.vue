@@ -1,6 +1,6 @@
 <template>
   <section class="sidenav bg-primary rounded" :class="toggleSidenav" name="sidenav">
-    <button @click="togglebutton">Toogle</button>
+    <button class="btn btn-secondary" @click="togglebutton">Toogle</button>
   </section>
 </template>
 

@@ -6,6 +6,7 @@ import { createPinia } from 'pinia'
 // Boostrap configuratión
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 //custom scss/css
 import '@/assets/css/main.css'
