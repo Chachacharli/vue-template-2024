@@ -13,5 +13,4 @@
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
-debugger
 </script>

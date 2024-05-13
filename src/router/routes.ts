@@ -4,19 +4,29 @@ export const ROUTES = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    meta: {
+      icon: 'bi bi-house-fill',
+      label: 'home'
+    }
   },
   {
     path: '/login',
     name: 'login',
-    component: HomeView
+    component: HomeView,
+    meta: {
+      icon: 'bi bi-house-fill',
+      label: 'login'
+    }
   },
   {
     path: '/users',
     name: 'users',
     component: HomeView,
     meta: {
-      breadcrumb: 'usuarios'
+      breadcrumb: 'usuarios',
+      icon: 'bi bi-house-fill',
+      label: 'users'
     },
     children: [
       {
@@ -26,4 +36,4 @@ export const ROUTES = [
       }
     ]
   }
-] as const
+]
