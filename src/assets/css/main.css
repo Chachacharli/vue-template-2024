@@ -5,6 +5,7 @@
   margin: 0.5rem;
   height: 98vh;
   position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .sidenav.toggle {
@@ -13,12 +14,13 @@
 }
 
 .main-content {
-  margin-left: 16.5rem;
+  margin-left: 18rem;
+  margin-right: 2rem;
   transition: 0.3s;
 }
 
 .main-content.toggle {
-  margin-left: 6.5rem;
+  margin-left: 9rem;
 }
 
 @media screen and (max-width: 1000px) {

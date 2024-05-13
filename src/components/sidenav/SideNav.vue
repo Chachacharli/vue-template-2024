@@ -1,12 +1,12 @@
 <template>
-  <section class="sidenav bg-secondary rounded shadow-lg" :class="toggleSidenav">
-    <button class="btn btn-secondary" @click="togglebutton">Toogle</button>
+  <section class="sidenav bg-primary rounded" :class="toggleSidenav">
+    <button class="btn btn-primary" @click="togglebutton"><i class="bi bi-list"></i></button>
     <section name="nav-list">
       <div v-for="route in ROUTES" :key="route.meta.label" class="nav-item text-white my-1 rounded">
         <SideItem>
           <router-link
             :to="route.name"
-            class="text-white d-flex align-items-center text-decoration-none w-100 h-100"
+            class="btn btn-secondary text-white d-flex align-items-center w-100 h-100"
             :class="isToggle ? 'justify-content-center' : 'px-2'"
           >
             <span class="mx-1"> <i :class="route.meta.icon"></i></span>
@@ -38,21 +38,3 @@ store.$subscribe((_, state) => {
   isToggle.value = state.isToggle
 })
 </script>
-
-<style>
-.nav-item {
-  width: 100%;
-  height: 50px;
-  color: white;
-  background-color: #191919;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.nav-item:hover {
-  background-color: beige;
-}
-</style>

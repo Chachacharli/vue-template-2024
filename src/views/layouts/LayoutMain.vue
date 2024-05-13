@@ -10,8 +10,10 @@
           <div name="currency-page"><h5>Home</h5></div>
         </div>
         <!-- user-info -->
-        <div class="d-flex">
-          <button class="btn btn-primary mx-1" @click="togglebutton">Toogle</button>
+        <div class="d-flex align-items-center">
+          <button class="btn btn-primary mx-1" @click="togglebutton">
+            <i class="bi bi-list"></i>
+          </button>
           <button class="btn btn-primary mx-1" @click="toggleTheme">
             <span>
               <i :class="theme === 'dark' ? 'bi bi-moon-fill' : 'bi bi-brightness-high'"></i>
