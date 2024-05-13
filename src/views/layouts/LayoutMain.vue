@@ -18,6 +18,7 @@
               {{ theme }}
             </span>
           </button>
+          <button @click="hanlderLocalization" class="btn btn-primary">Locales</button>
         </div>
       </nav>
       <section class="p-2">
@@ -35,7 +36,9 @@ import { useAppStore } from '@/stores/app'
 import { ref, computed } from 'vue'
 
 import useTheme from '@/hooks/useTheme'
+import { useLocalization } from '@/hooks/useLocalization'
 
+const { locale, changeLocale } = useLocalization()
 const { theme, toggleTheme } = useTheme()
 const store = useAppStore()
 
@@ -45,6 +48,14 @@ const toggleSidenav = computed(() => (isToggle.value ? 'toggle' : ''))
 const togglebutton = () => {
   isToggle.value = !isToggle.value
   store.isToggle = isToggle.value
+}
+
+const hanlderLocalization = () => {
+  if (locale.value === 'es') {
+    changeLocale('en')
+  } else {
+    changeLocale('es')
+  }
 }
 
 store.$subscribe((_, state) => {

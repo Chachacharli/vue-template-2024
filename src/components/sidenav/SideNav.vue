@@ -1,5 +1,5 @@
 <template>
-  <section class="sidenav bg-primary rounded" :class="toggleSidenav" name="sidenav">
+  <section class="sidenav bg-secondary rounded shadow-lg" :class="toggleSidenav">
     <button class="btn btn-secondary" @click="togglebutton">Toogle</button>
     <section name="nav-list">
       <div v-for="route in ROUTES" :key="route.meta.label" class="nav-item text-white my-1 rounded">
@@ -49,5 +49,10 @@ store.$subscribe((_, state) => {
   align-items: center;
   justify-content: left;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-item:hover {
+  background-color: beige;
 }
 </style>
