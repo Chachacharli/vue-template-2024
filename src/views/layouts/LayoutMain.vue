@@ -3,7 +3,9 @@
     <side-nav />
     <section style="flex-grow: 1" class="main-content w-100 mt-2" :class="toggleSidenav">
       <!-- superior-nav -->
-      <nav class="bg-secondary d-flex justify-content-between superior-navbar mx-2 p-2 rounded">
+      <nav
+        class="superior-nav bg-primary rounded d-flex justify-content-between superior-navbar mx-2 p-2"
+      >
         <!-- bread-crumb -->
         <div class="flex flex-column">
           <BreadCrumb />
@@ -11,19 +13,19 @@
         </div>
         <!-- user-info -->
         <div class="d-flex align-items-center">
-          <button class="btn btn-primary mx-1" @click="togglebutton">
+          <button class="btn btn-secondary mx-1" @click="togglebutton">
             <i class="bi bi-list"></i>
           </button>
-          <button class="btn btn-primary mx-1" @click="toggleTheme">
+          <button class="btn btn-secondary mx-1" @click="toggleTheme">
             <span>
               <i :class="theme === 'dark' ? 'bi bi-moon-fill' : 'bi bi-brightness-high'"></i>
               {{ theme }}
             </span>
           </button>
-          <button @click="hanlderLocalization" class="btn btn-primary">Locales</button>
+          <button @click="hanlderLocalization" class="btn btn-secondary">Locales</button>
         </div>
       </nav>
-      <section class="p-2">
+      <section>
         <slot></slot>
       </section>
     </section>

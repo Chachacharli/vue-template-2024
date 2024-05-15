@@ -14,13 +14,13 @@
 }
 
 .main-content {
-  margin-left: 18rem;
-  margin-right: 2rem;
+  margin-left: 17rem;
+  margin-right: 0rem;
   transition: 0.3s;
 }
 
 .main-content.toggle {
-  margin-left: 9rem;
+  margin-left: 7.5rem;
 }
 
 @media screen and (max-width: 1000px) {

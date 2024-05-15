@@ -3,11 +3,23 @@ import HomeView from '../views/HomeView.vue'
 export const ROUTES = [
   {
     path: '/',
+    name: 'base',
+    component: HomeView,
+    meta: {
+      icon: 'bi bi-house-fill',
+      label: '/',
+      color: '#5e72e4',
+      notVisible: true
+    }
+  },
+  {
+    path: '/home',
     name: 'home',
     component: HomeView,
     meta: {
       icon: 'bi bi-house-fill',
-      label: 'home'
+      label: 'home',
+      color: '#5e72e4'
     }
   },
   {
@@ -16,7 +28,8 @@ export const ROUTES = [
     component: HomeView,
     meta: {
       icon: 'bi bi-house-fill',
-      label: 'login'
+      label: 'login',
+      color: '#a8e45e'
     }
   },
   {
@@ -26,7 +39,8 @@ export const ROUTES = [
     meta: {
       breadcrumb: 'usuarios',
       icon: 'bi bi-house-fill',
-      label: 'users'
+      label: 'users',
+      color: '#e45e72'
     },
     children: [
       {
@@ -35,5 +49,15 @@ export const ROUTES = [
         component: HomeView
       }
     ]
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: HomeView,
+    meta: {
+      icon: 'bi bi-house-fill',
+      label: 'login',
+      color: '#e45edd'
+    }
   }
 ]
